@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru">
+  <%- include('common/head.ejs',{title:'sushi box - главная'}) %>
+  <body>
+    <%- include('common/header.ejs') %>
+    <section class="body">
+      <%- include('slider.ejs') %>
+      <%- include('filter.ejs') %>
+      <%- include('catalog.ejs') %>
+    </section>
+    <%- include('common/footer.ejs') %>
+    <script src="/static/js/index.js"></script>
+  </body>
+</html>

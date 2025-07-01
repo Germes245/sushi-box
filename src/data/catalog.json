@@ -1,0 +1,6 @@
+{
+  "catalog": [
+    { "id": 1, "name": "cabuk" },
+    { "id": 2, "name": "kolog" }
+  ]
+}
