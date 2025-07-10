@@ -1,6 +1,6 @@
 import { get_list } from "../models/catalog.js";
-function main_page(req, res, next) {
-  const catalog = get_list();
+async function main_page(req, res, next) {
+  const catalog = await get_list();
   res.render("main_page", {
     catalog,
   });

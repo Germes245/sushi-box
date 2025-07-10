@@ -33,6 +33,14 @@
     </button>
   </div>
   <div class="filter_downer">
+    <% for(let i of filters){ %>
+      <button>
+      <span><%= i.id %></span>
+      <div
+        style="background-image: url('<%= i.url %>')"
+      ></div>
+    </button>
+    <% } %>
     <button>
       <span>Лосось</span>
       <div

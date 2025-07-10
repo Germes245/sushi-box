@@ -1,7 +1,12 @@
-import { join } from 'node:path';
-import { readFileSync } from 'node:fs';
-import { currentDir } from '../utils/currentDir.js';
-const dataFileName = join(currentDir, 'data', 'catalog.json');
-const dataFile = readFileSync(dataFileName, 'utf8');
-const database = JSON.parse(dataFile);
+import { join } from "node:path";
+import { readFileSync } from "node:fs";
+import { currentDir } from "../utils/currentDir.js";
+const catalogFileName = join(currentDir, "data", "catalog.json");
+const filtersFileName = join(currentDir, "data", "filters.json");
+const catalogFile = readFileSync(catalogFileName, "utf8");
+const filtersFile = readFileSync(filtersFileName, "utf8");
+//const database = JSON.parse(dataFile);
+const catalog = JSON.parse(catalogFile);
+const filters = JSON.parse(filtersFile);
+const database = { ...catalog, ...filters };
 export { database };

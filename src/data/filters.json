@@ -1,0 +1,6 @@
+{
+  "filters": [
+    { "id": "1", "name": "лосось", "url": "./assets/image 1727.png" },
+    { "id": "2", "name": "Креветка", "url": "./assets/image 1743.png" }
+  ]
+}
